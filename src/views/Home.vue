@@ -28,14 +28,13 @@
         <h2>Hey.Bienvenue sur ma collection</h2>
       </header>
     </section>
-
     <!-- Intro -->
     <section id="intro" class="container">
       <div v-if="!isLoading" class="row">
         <Amiibo v-for="amiibo in allAmiibos" :key="amiibo.tail" :amiibo="amiibo"/>
       </div>
       <div v-else>
-        <p>Chargement...</p>
+        <p class="loading">Chargement...</p>
       </div>
       <footer>
         <ul class="actions">

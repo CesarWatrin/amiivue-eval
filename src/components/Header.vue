@@ -12,7 +12,6 @@
         <li >
           <RouterLink :to="{ name: 'home' }">Home</RouterLink>
         </li>
-        <!-- <li><a href="left-sidebar.html">Pokémons</a></li> -->
         <li >
           <RouterLink :to="{ name: 'list' }">Liste Amiibo</RouterLink>
         </li>

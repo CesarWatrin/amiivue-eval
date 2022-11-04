@@ -1,13 +1,16 @@
 <script setup>
   import {defineProps} from 'vue';
+  import { useRouter } from 'vue-router';
 
-  const props = defineProps({
+  const router = useRouter();
+
+  defineProps({
     amiibo: Object,
   });
 </script>
 
 <template>
-  <div class="col-4 col-12-medium">
+  <div class="col-4 col-12-medium cursor-pointer" @click="router.push({ name: 'details', params: { id: amiibo.tail }})">
     <section class="middle">
       <img :src="amiibo.image" />
       <header>
